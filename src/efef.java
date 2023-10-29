@@ -27,3 +27,12 @@ public class efef {
         }
     }
 }
+/*
+Good catch. We'll post an updated diagram to clarify this (see below). As noted, from the original diagram, it isn't clear how the Builder is adding the customization, since the customizations variable of BubbleTea is private and the Builder class appears not to have access to it.
+tl;dr — The Builder really can add a customization to the BubbleTea object it is building.
+Below is the updated diagram and code clarifying what an "inner class" looks like (you'll also see a similar idea in your coding homework which will be posted later today which has you implement an iterator).
+Updated diagram:
+So the addCustomization method directly adds the customization to the list of customizations in the bubbleTea variable. Note, the private constructor of BubbleTea has also been omitted, so that has been added to clarify how the Builder class can construct a BubbleTea object.
+For extra clarity, below is what the code would look like for the two relevant classes:
+
+ */
